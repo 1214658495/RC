@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/customJsonId">
+
+        <ImageView
+            android:id="@+id/imageViewCmds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:src="@drawable/ic_template" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextCommand"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND"
+            android:id="@+id/buttonJsonSend"
+            android:layout_weight="0"
+            android:layout_gravity="right" />
+    </LinearLayout>
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Photo"
+        android:id="@+id/takePhotoBtnId"
+        android:layout_below="@+id/customJsonId"
+        android:layout_toStartOf="@+id/startRecBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Start Rec"
+        android:id="@+id/startRecBtnId"
+        android:layout_below="@+id/customJsonId"
+        android:layout_alignStart="@+id/splitRecordingBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Stop Rec"
+        android:id="@+id/stopRecBtnId"
+        android:layout_below="@+id/customJsonId"
+        android:layout_toEndOf="@+id/startRecBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Rec Time"
+        android:id="@+id/recordingTimeBtnId"
+        android:layout_toStartOf="@+id/splitRecordingBtnId"
+        android:layout_below="@+id/takePhotoBtnId"  />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Split Rec"
+        android:id="@+id/splitRecordingBtnId"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/startRecBtnId"   />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="View rtsp"
+        android:id="@+id/viewRTSPStreamBtnId"
+        android:layout_below="@+id/recordingTimeBtnId"
+        android:layout_toStartOf="@+id/stopVFBtnId"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="BitRate"
+        android:id="@+id/bitRateBtnId"
+        android:layout_below="@+id/batteryLevelBtnId"
+        android:layout_alignLeft="@+id/batteryLevelBtnId"  />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bitrateTextId"
+        android:layout_alignBottom="@+id/bitRateBtnId"
+        android:layout_toEndOf="@+id/bitRateBtnId"
+        android:text="bitrate" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Reset VF"
+        android:id="@+id/resetVFBtnId"
+        android:layout_below="@+id/stopRecBtnId"
+        android:layout_toEndOf="@+id/splitRecordingBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Stop VF"
+        android:id="@+id/stopVFBtnId"
+        android:layout_below="@+id/splitRecordingBtnId"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Get Space"
+        android:id="@+id/diskSpaceBtnId"
+        android:layout_below="@+id/splitRecordingBtnId"
+        android:layout_toEndOf="@+id/splitRecordingBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="FreeSpace"
+        android:id="@+id/freeSpaceBtnId"
+        android:layout_below="@+id/viewRTSPStreamBtnId"
+        android:layout_toStartOf="@+id/appStatusBtnId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Camera Settings"
+        android:id="@+id/cameraSettingsBtnId"
+        android:layout_below="@+id/appStatusBtnId"
+        android:layout_alignEnd="@+id/deviceInfoBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="APP Status"
+        android:id="@+id/appStatusBtnId"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/stopVFBtnId" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="Device Info"
+        android:id="@+id/deviceInfoBtnId"
+        android:layout_below="@+id/diskSpaceBtnId"
+        android:layout_alignEnd="@+id/diskSpaceBtnId"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="BatteryInfo"
+        android:id="@+id/batteryLevelBtnId"
+        android:layout_below="@+id/freeSpaceBtnId"
+        android:layout_toStartOf="@+id/cameraSettingsBtnId"
+        android:layout_alignLeft="@+id/freeSpaceBtnId"/>
+
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="debug"
+        android:id="@+id/showDebug"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bitRateBtnId"
+        android:layout_alignEnd="@+id/bitRateBtnId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="log view"
+        android:id="@+id/logViewBtnId"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignEnd="@+id/cameraSettingsBtnId"
+        android:layout_toEndOf="@+id/appStatusBtnId" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LiveView"
+        android:id="@+id/liveAudioViewId"
+        android:layout_alignTop="@+id/bitrateTextId"
+        android:layout_alignEnd="@+id/deviceInfoBtnId"
+        android:layout_alignBottom="@+id/bitrateTextId"
+        android:layout_toEndOf="@+id/appStatusBtnId" />
+
+
+</RelativeLayout>

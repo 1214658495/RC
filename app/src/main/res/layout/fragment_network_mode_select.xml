@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/network_mode_select_fragment"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Network Type:"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:id="@+id/network_list"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:background="@android:color/holo_green_dark"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="settings"
+        android:id="@+id/textViewSettings"
+        android:layout_below="@+id/network_list"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center_horizontal" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/remotecamera_prefs"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textViewSettings"
+        android:id="@+id/appPreferences"/>
+</LinearLayout>

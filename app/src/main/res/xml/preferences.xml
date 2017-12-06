@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="1. Camera IPAddress:">
+        <EditTextPreference
+            android:key="remote_camera_ip_address"
+            android:title="> Camera IP Address"
+            android:summary="Set Remote Camera IP Address"
+            android:dialogTitle="Input correct remote camera IP address"
+            android:defaultValue="192.168.42.1"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="2. BlueTooth LowEnergy connection Retry Timeout">
+        <EditTextPreference
+            android:key="ble_connection_retry_timeout"
+            android:title="> BLE Connection Retry Timeout"
+            android:summary="Specify timeout in seconds"
+            android:dialogTitle="connection retry in seconds"
+            android:defaultValue="10" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="3. BLE GATT Auto Reconnect">
+        <CheckBoxPreference
+            android:key="ble_gatt_auto_reconnect_checkbox"
+            android:title="> BLE GATT autoConnect to GATTServer:"
+            android:summary="BLE GATTAutoReconnect Checkbox"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="4. Querry Session Holder">
+        <CheckBoxPreference
+            android:key="querry_session_holder_checkbox"
+            android:title="> Querry Session Holder"
+            android:summary="Querry Session holder Checkbox"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="5. Save Session Log to External Storage">
+        <CheckBoxPreference
+            android:key="save_external_session_log_checkbox"
+            android:title="> Save Session Log to external Storage"
+            android:summary="Save Session Log to external Storage"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="6. Enable RTSP Debug Log">
+        <CheckBoxPreference
+            android:key="enable_rtsp_debug_log_checkbox"
+            android:title="> RTSP Debug log"
+            android:summary="RTSP Debug Log Checkbox"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="7. RTSP Transport Protocol">
+        <ListPreference
+            android:key="rtsp_transport_protocol_list_preference"
+            android:title="> Select rtsp transport Protocol:"
+            android:summary="UDP or TCP"
+            android:entries="@array/rtsp_transport_listDisplayWord"
+            android:entryValues="@array/rtsp_transport_listReturnValue"
+            android:dialogTitle="Select RTSP Transport  Protocol:"
+            android:defaultValue="UDP"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="APP Version:">
+        <EditTextPreference
+            android:key="remote_camera_app_version"
+            android:title=">AmbaRemoteCamera APP Version:"
+            android:summary="Show AmbaRemoteCamera APP Version "
+            android:dialogTitle="Version"
+            android:defaultValue="1.3.3"
+            android:clickable="false"
+            android:editable="false"
+            android:negativeButtonText="OK"
+            android:positiveButtonText="OK"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@android:color/holo_green_dark">
+
+    <TextView
+        android:id="@+id/textViewDentryPath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#FF0000FF"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="206dp"
+            android:layout_height="329dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Camera Wifi Parameters :"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/wifieditTextId"
+                android:layout_gravity="center_horizontal"
+                android:editable="true"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="right">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="GetSettings"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="12sp"
+                android:id="@+id/getWificonfig" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Set Settings"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="12sp"
+                android:id="@+id/updateWifiSettings" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="WifiStop"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="12sp"
+                android:id="@+id/wifiStop" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="WifiStart"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/wifiStart" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="wifiReload"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                android:textSize="12sp"
+                android:id="@+id/wifiReload" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

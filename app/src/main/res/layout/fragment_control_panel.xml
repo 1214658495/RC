@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="15dp"
+        android:text="Start Session"
+        android:id="@+id/startSessionBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Camera Commands"
+        android:id="@+id/cameraCommandsBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Camera File Operations"
+        android:id="@+id/cameraFileOperationsBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Camera Settings"
+        android:id="@+id/cameraParameterSettingBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Wifi Settings"
+        android:id="@+id/cameraWifiCommandsBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Stop Session"
+        android:id="@+id/stopSessionBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Client Wifi IP:"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientWifiIPTextFieldId"
+        android:layout_gravity="center_horizontal"
+        android:inputType="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Client BT Address:"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clientBTAddressField"
+        android:layout_gravity="center_horizontal"
+        android:inputType="none" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Set Client Info"
+        android:id="@+id/setClientInfoBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:text="Disconnect"
+        android:id="@+id/disconnectBtnId"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:text="LogView"
+        android:id="@+id/logViewBtnId"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMBA_QUERY_SESSION_HOLDER"
+        android:id="@+id/querySessionHolderId"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+         />
+
+</LinearLayout>

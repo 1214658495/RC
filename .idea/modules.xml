@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RemoteCamera.iml" filepath="$PROJECT_DIR$/RemoteCamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afilechooser/aFileChooser/aFileChooser.iml" filepath="$PROJECT_DIR$/afilechooser/aFileChooser/aFileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afilechooser/afilechooser.iml" filepath="$PROJECT_DIR$/afilechooser/afilechooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

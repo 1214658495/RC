@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ambarella.remotecamera.fragments.CameraFragment" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        layout="@layout/viewfinder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/imageViewStopVF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stopVF"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/imageViewStopPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Stopphoto"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/imageViewStopRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="StopRec"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/imageViewForceSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Split"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/imageViewStartVF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startVF"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/imageViewStartPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Photo"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <Button
+            android:id="@+id/imageViewStartRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Rec"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+        <TextView
+            android:id="@+id/textViewRecordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="00:00"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageViewClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:src="@drawable/ic_clock" />
+
+    </LinearLayout>
+
+</LinearLayout>

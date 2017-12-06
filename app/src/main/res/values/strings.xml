@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">[ AMBA ]</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bt_connect_error">Failed to connect to Bluetooth Device \"%s\"</string>
+    <string name="wifi_connect_error">Failed to connect to \"%1$s:%2$d\", please check you WIFI settings</string>
+    <string name="command_not_supported_error">Command \"%s\" is not supported yet!</string>
+    <string name="invalid_session_error">SessionID is invalid, please start a session first!</string>
+    <string name="invalid_connect_error">The selected connectivity type is not supported"</string>
+    <string name="title_activity_stream_player">StreamPlayerActivity</string>
+    <string name="choose_file">Choose File</string>
+
+
+    <string name="buffering">buffering</string>
+    <string name="sort">Sort</string>
+
+    <string name="vitamio_name">Vitamio</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="vitamio_videoview_error_title">Cannot play video</string>
+    <string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+    <string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="vitamio_videoview_error_button">OK</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="title_app_settings_activity_main">RemoteCam Preferences</string>
+
+
+</resources>

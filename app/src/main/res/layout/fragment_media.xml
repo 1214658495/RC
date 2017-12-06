@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@android:color/holo_green_dark">
+
+    <TextView
+        android:id="@+id/textViewDentryPath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_weight="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="#FF0000FF"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textViewDentryEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:autoText="true" />
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ListView
+                android:id="@+id/listViewDentryName"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Delete"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/deleteFileId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="MediaInfo"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/mediaInfId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Set-RO-Attr"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/setROattrId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Set-RW-Attr"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/setRWattrId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="PWD"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/pwdId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="FileCount"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/totalFileCountId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="NoPhotoFiles"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/photoFileCountId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="NoVideoFiles"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/videoFileCountId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="PlayBack"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/playBackId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="Download"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/fileDownloadId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="GetThumb"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/getThumbId" />
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="34dp"
+                android:text="BurnInFW"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:id="@+id/burnInFwId"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
