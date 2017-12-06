@@ -208,7 +208,7 @@ public class MainActivity extends Activity implements
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (requestCode) {
             case REQUEST_CODE_UPLOAD:
-                // If the file selection was successful
+                // If the file selection was successful.
                 if (resultCode == RESULT_OK) {
                     if (data != null) {
                         // Get the URI of the selected file
